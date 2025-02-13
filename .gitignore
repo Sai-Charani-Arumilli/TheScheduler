@@ -33,6 +33,7 @@ appsettings.Development.json
 appsettings.Local.json
 appsettings.Production.json
 appsettings.Staging.json
+appsettings.json
 
 # Ignore .NET Core-specific files
 project.lock.json
