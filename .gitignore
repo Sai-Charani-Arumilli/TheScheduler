@@ -1,0 +1,60 @@
+# .NET Core .gitignore
+# Ignore Visual Studio specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build output
+bin/
+obj/
+out/
+
+# Ignore dependencies
+packages/
+!packages/repositories.config
+
+# Ignore logs, databases, and sensitive files
+*.log
+*.tlog
+*.pdb
+*.cache
+*.DS_Store
+*.pyc
+*.db
+*.sqlite
+*.sqlite3
+secrets.json
+
+# Ignore ASP.NET Core environment-specific files
+.env
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# Ignore .NET Core-specific files
+project.lock.json
+project.assets.json
+project.nuget.cache
+*.nuspec
+*.nupkg
+
+# Ignore Rider & JetBrains specific files
+.idea/
+*.iml
+
+# Ignore Node.js dependencies (if using npm/yarn in frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Ignore Python virtual environments (if using Python for scripts)
+venv/
+__pycache__/
+
+# Ignore macOS system files
+.DS_Store
