@@ -29,6 +29,14 @@ public class HomeController : Controller
         return View(users);
     }
 
+    [HttpGet]
+public IActionResult SearchUsers(string q)
+    {
+        var results = _userService.SearchUsers(q ?? "");
+        return Json(results);
+    }
+
+
     public IActionResult Privacy()
     {
         return View();
